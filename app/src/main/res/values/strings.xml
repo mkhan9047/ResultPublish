@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">ResultPublish</string>
     <string name="action_settings">Settings</string>
+    <string-array name="snipper">
+        <item>Science</item>
+        <item>Commerce</item>
+        <item>Humanities</item>
+    </string-array>
 </resources>
