@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mujahid.resultpublish.Fragments.Commerce_Subject">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="25dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:hint="Accounting"
+            android:inputType="number"
+            android:id="@+id/accounting"
+            />
+        <EditText
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:hint="Entireprenure"
+            android:layout_marginTop="5dp"
+            android:id="@+id/entireprenure"
+            android:inputType="number"
+            />
+        <EditText
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:hint="Business mark"
+            android:layout_marginTop="5dp"
+            android:id="@+id/business"
+            android:inputType="number"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="50dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:hint="Bangla mark"
+            android:inputType="number"
+            android:id="@+id/Combangla"
+            />
+
+        <EditText
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:hint="English mark"
+            android:layout_marginTop="5dp"
+            android:id="@+id/ComEnglish"
+            android:inputType="number"
+            />
+
+        <EditText
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:hint="Islam mark"
+            android:layout_marginTop="5dp"
+            android:id="@+id/ComiIslam"
+            android:inputType="number"
+            />
+    </LinearLayout>
+
+</LinearLayout>
