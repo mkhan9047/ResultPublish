@@ -1,5 +1,7 @@
 package com.example.mujahid.resultpublish.EventBus;
 
+import java.util.HashMap;
+
 /**
  * Created by Mujahid on 12/29/2017.
  */
@@ -8,28 +10,28 @@ public class Event {
 
     public static class ScienceFragmentActivityMessage {
 
-        String[] message;
+       HashMap<String, Integer> message;
 
-        public ScienceFragmentActivityMessage(String[] m) {
+        public ScienceFragmentActivityMessage(HashMap<String, Integer> m) {
 
             message = m;
         }
 
-        public String[] getMessage() {
+        public HashMap<String, Integer> getMessage() {
 
             return message;
         }
     }
     public static class CommerceFragmentActivityMessage {
 
-        String[] message;
+        HashMap<String, Integer> message;
 
-        public CommerceFragmentActivityMessage(String[] m) {
+        public CommerceFragmentActivityMessage(HashMap<String, Integer> m) {
 
             message = m;
         }
 
-        public String[] getMessage() {
+        public HashMap<String, Integer> getMessage() {
 
             return message;
         }
@@ -37,14 +39,14 @@ public class Event {
 
     public static class ArtFragmentActivityMessage {
 
-        String[] message;
+        HashMap<String, Integer>  message;
 
-        public ArtFragmentActivityMessage(String[] m) {
+        public ArtFragmentActivityMessage(HashMap<String, Integer>  m) {
 
             message = m;
         }
 
-        public String[] getMessage() {
+        public HashMap<String, Integer>  getMessage() {
 
             return message;
         }
