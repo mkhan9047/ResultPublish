@@ -62,7 +62,7 @@ public class SaveMarks extends AppCompatActivity {
 
     public void onEdit(View view) {
         SaveToServer a = new SaveToServer();
-        a.test();
+        a.saveScienceMark(this,"823304",90,49,55,69,79,54);
     }
 
 
