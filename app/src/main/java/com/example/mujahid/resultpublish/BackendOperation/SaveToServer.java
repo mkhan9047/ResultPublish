@@ -49,11 +49,7 @@ public class SaveToServer  {
     private boolean isArtsSaveSuccess;
     private boolean isCommerceSaveSuccess;
 
-    public boolean isStillRunning() {
-        return stillRunning;
-    }
 
-    private boolean stillRunning = true;
 
     public void saveStudentInfo(Context context, String name, String father_name, String mother_name, String subject, String roll_number,String birth_date){
         new StudentAsyn(context).execute(name,father_name,mother_name,subject,roll_number,birth_date);
@@ -199,8 +195,10 @@ new ArtsMark(context).execute(Integer.parseInt(roll_number),history,economics,ma
 
 
                 Log.d("Mim",encode);
+                if(isStudentSaveSucces){
+                    writer.write(encode);
+                }
 
-                writer.write(encode);
                 writer.flush();
                 writer.close();
                 outputStream.close();
@@ -247,6 +245,9 @@ new ArtsMark(context).execute(Integer.parseInt(roll_number),history,economics,ma
                 }
             }else{
                 Toast.makeText(con,"Data not Saved, Duplicate Roll",Toast.LENGTH_LONG).show();
+                if(progressDialog.isShowing()){
+                    progressDialog.dismiss();
+                }
             }
 
         }
@@ -293,8 +294,10 @@ new ArtsMark(context).execute(Integer.parseInt(roll_number),history,economics,ma
 
 
                 Log.d("Mim",encode);
+                if(isStudentSaveSucces){
+                    writer.write(encode);
+                }
 
-                writer.write(encode);
                 writer.flush();
                 writer.close();
                 outputStream.close();
@@ -340,6 +343,9 @@ new ArtsMark(context).execute(Integer.parseInt(roll_number),history,economics,ma
                 }
             }else{
                 Toast.makeText(con,"Data not Saved, Duplicate Roll",Toast.LENGTH_LONG).show();
+                if(progressDialog.isShowing()){
+                    progressDialog.dismiss();
+                }
             }
         }
     }
@@ -386,8 +392,10 @@ new ArtsMark(context).execute(Integer.parseInt(roll_number),history,economics,ma
 
 
                 Log.d("Mim",encode);
+                if(isStudentSaveSucces){
+                    writer.write(encode);
+                }
 
-                writer.write(encode);
                 writer.flush();
                 writer.close();
                 outputStream.close();
@@ -433,7 +441,11 @@ new ArtsMark(context).execute(Integer.parseInt(roll_number),history,economics,ma
                 }
             }else{
                 Toast.makeText(con,"Data not Saved, Duplicate Roll",Toast.LENGTH_LONG).show();
+                if(progressDialog.isShowing()){
+                    progressDialog.dismiss();
+                }
             }
         }
     }
+
 }

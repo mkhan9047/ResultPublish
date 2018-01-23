@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.example.mujahid.resultpublish.BackendOperation.GetServerData;
 import com.example.mujahid.resultpublish.BackendOperation.SaveToServer;
 import com.example.mujahid.resultpublish.EventBus.Event;
 import com.example.mujahid.resultpublish.EventBus.GlobalBus;
@@ -134,8 +135,7 @@ public class SaveMarks extends AppCompatActivity {
     }
 
     public void onEdit(View view) {
-        SaveToServer a = new SaveToServer();
-        a.saveArtsMark(this, "823870", 90, 49, 55, 69, 79, 54);
+
     }
 
     public boolean Validation() {

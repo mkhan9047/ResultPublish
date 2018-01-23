@@ -149,6 +149,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/search"
+        android:onClick="onLoad"
         android:layout_marginStart="12dp"
         android:layout_toEndOf="@+id/search"
         android:text="Load" />
